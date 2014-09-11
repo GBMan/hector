@@ -1,4 +1,4 @@
-// Generated on 2014-09-08 using generator-angular 0.9.5
+// Generated on 2014-09-10 using generator-angular 0.9.5
 'use strict';
 
 // # Globbing
@@ -163,7 +163,7 @@ module.exports = function (grunt) {
     // Automatically inject Bower components into the app
     wiredep: {
       options: {
-        cwd: '<%= yeoman.app %>'
+        /*cwd: '<%= yeoman.app %>'*/
       },
       app: {
         src: ['<%= yeoman.app %>/index.html'],
@@ -352,6 +352,11 @@ module.exports = function (grunt) {
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/images',
           src: ['generated/*']
+        }, {
+          expand: true,
+          cwd: '.',
+          src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
+          dest: '<%= yeoman.dist %>'
         }]
       },
       styles: {
