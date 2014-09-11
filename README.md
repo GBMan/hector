@@ -1,7 +1,7 @@
 hector
 ======
 
-Site de Paul.
+Site de Paul Sablons alias 'Hector'.
 
 # Install
 
